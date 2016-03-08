@@ -4,7 +4,7 @@ import logic.data.AbstractDataLoader;
 
 import java.io.File;
 
-public class XmlLoader extends AbstractDataLoader {
+public class LDataLoader extends AbstractDataLoader {
     private File[] files;
 
     @Override

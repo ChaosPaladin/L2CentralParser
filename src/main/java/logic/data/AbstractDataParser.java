@@ -1,12 +1,12 @@
 package logic.data;
 
-public abstract class AbstractDataParser {
-    protected String path;
+public abstract class AbstractDataParser<T> {
+    protected T dataObject;
 
-    public AbstractDataParser(String path) {
-        this.path = path;
+    public AbstractDataParser(T dataObject) {
+        this.dataObject = dataObject;
     }
 
     public abstract void parse();
-    public abstract <T extends AbstractDataResult> T getResult();
+    public abstract <R> R getResult();
 }

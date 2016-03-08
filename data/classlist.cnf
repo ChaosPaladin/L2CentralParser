@@ -1,0 +1,168 @@
+[Human]
+0=HumanFighter=Воин
+1=Warrior=Воитель
+2=Gladiator=Гладиатор
+3=Warlord=Копейщик
+4=HumanKnight=Рыцарь
+5=Paladin=Паладин
+6=DarkAvenger=Мститель
+7=Rogue=Разбойник
+8=TreasureHunter=Искатель Сокровищ
+9=Hawkeye=Стрелок
+10=HumanMystic=Мистик
+11=HumanWizard=Маг
+12=Sorceror=Властитель Огня
+13=Necromancer=Некромант
+14=Warlock=Колдун
+15=Cleric=Клерик
+16=Bishop=Епископ
+17=Prophet=Проповедник
+88=Duelist=Дуэлист
+89=Dreadnought=Полководец
+90=PhoenixKnight=Рыцарь Феникса
+91=HellKnight=Рыцарь Ада
+92=Sagittarius=Снайпер
+93=Adventurer=Авантюрист
+94=Archmage=Архимаг
+95=Soultaker=Пожиратель Душ
+96=ArcanaLord=Чернокнижник
+97=Cardinal=Кардинал
+98=Hierophant=Апостол
+
+[Elf]
+18=ElvenFighter=Светлый Воин
+19=ElvenKnight=Светлый Рыцарь
+20=TempleKnight=Рыцарь Евы
+21=Swordsinger=Менестрель
+22=ElvenScout=Разведчик
+23=Plainswalker=Следопыт
+24=SilverRanger=Серебряный Рейнджер
+25=ElvenMystic=Светлый Мистик
+26=ElvenWizard=Светлый Маг
+27=Spellsinger=Певец Заклинаний
+28=ElementalSummoner=Последователь Стихий
+29=ElvenOracle=Оракул Евы
+30=ElvenElder=Мудрец Евы
+99=EvaTemplar=Храмовник Евы
+100=SwordMuse=Виртуоз
+101=WindRider=Странник Ветра
+102=MoonlightSentinel=Страж Лунного Света
+103=MysticMuse=Магистр Магии
+104=ElementalMaster=Мастер Стихий
+105=EvaSaint=Жрец Евы
+
+[Dark Elf]
+31=DarkFighter=Темный Воин
+32=PalusKnight=Темный Рыцарь
+33=ShillienKnight=Рыцарь Шилен
+34=Bladedancer=Танцор Смерти
+35=Assassin=Ассасин
+36=AbyssWalker=Странник Бездны
+37=PhantomRanger=Странник Бездны
+38=DarkMystic=Темный Мистик
+39=DarkWizard=Темный Маг
+40=Spellhowler=Заклинатель Ветра
+41=PhantomSummoner=Последователь Тьмы
+42=ShillienOracle=Оракул Шилен
+43=ShillienElder=Мудрец Шилен
+106=ShillienTemplar=Храмовник Шилен
+107=SpectralDancer=Призрачный Танцор
+108=GhostHunter=Призрачный Охотник
+109=GhostSentinel=Страж Теней
+110=StormScreamer=Повелитель Бури
+111=SpectralMaster=Владыка Теней
+112=ShillienSaint=Жрец Шилен
+
+[Orc]
+44=OrcFighter=Боец
+45=OrcRaider=Налётчик
+46=Destroyer=Разрушитель
+47=Monk=Монах
+48=Tyrant=Отшельник
+49=OrcMystic=Адепт
+50=OrcShaman=Шаман
+51=Overlord=Верховный Шаман
+52=Warcryer=Вестник Войны
+113=Titan=Титан
+114=GrandKhavatari=Аватар
+115=Dominator=Деспот
+116=Doomcryer=Глас Судьбы
+
+[Dwarf]
+53=DwarvenFighter=Подмастерье
+54=Scavenger=Собиратель
+55=BountyHunter=Охотник за Наградой
+56=Artisan=Ремесленник
+57=Warsmith=Кузнец
+117=FortuneSeeker=Кладоискатель
+118=Maestro=Мастер
+
+[Kamael]
+123=MaleSoldier=Грешник
+124=FemaleSoldier=Грешница
+125=Trooper=Солдат
+126=Warder=Надзиратель
+127=Berserker=Берсерк
+128=MaleSoulBreaker=Палач
+129=FemaleSoulBreaker=Палач
+130=Arbalester=Арбалетчик
+131=Doombringer=Каратель
+132=MaleSoulHound=Инквизитор
+133=FemaleSoulHound=Инквизитор
+134=Trickster=Диверсант
+135=Inspector=Инспектор
+136=Judicator=Арбитр
+
+[Ertheia]
+182=ErtheiaFighter=Воин Артеи
+183=ErtheiaWizard=Маг Артеи
+184=Marauder=Боец Сайхи
+185=CloudBreaker=Последователь Сайхи
+186=Ripper=Ловец Ветра
+187=Stratomancer=Укротитель Ветра
+188=Eviscerator=Заступник Сайхи
+189=SayhasSeer=Громовержец Сайхи
+
+[4th]
+139=SigelKnight=Рыцарь Сигеля
+140=TyrrWarrior=Воин Тира
+141=OthellRogue=Разбойник Одала
+142=YulArcher=Лучник Эура
+143=FeohWizard=Волшебник Фео
+144=IssEnchanter=Заклинатель Иса
+145=WynnSummoner=Призыватель Веньо
+146=AeoreHealer=Целитель Альгиза
+148=SigelPhoenixKnight=Рыцарь Феникса Сигеля
+149=SigelHellKnight=Рыцарь Ада Сигеля
+150=SigelEvasTemplar=Храмовник Евы Сигеля
+151=SigelShillienTemplar=Храмовник Шилен Сигеля
+152=TyrrDuelist=Дуэлист Тира
+153=TyrrDreadnought=Полководец Тира
+154=TyrrTitan=Титан Тира
+155=TyrrGrandKhavatari=Аватар Тира
+156=TyrrMaestro=Мастер Тира
+157=TyrrDoombringer=Каратель Тира
+158=OthellAdventurer=Авантюрист Одала
+159=OthellWindRider=Странник Ветра Одала
+160=OthellGhostHunter=Призрачный Охотник Одала
+161=OthellFortuneSeeker=Кладоискатель Одала
+162=YulSagittarius=Снайпер Эура
+163=YulMoonlightSentinel=Страж Лунного Света Эура
+164=YulGhostSentinel=Страж Теней Эура
+165=YulTrickster=Диверсант Эура
+166=FeohArchmage=Архимаг Фео
+167=FeohSoultaker=Пожиратель Душ Фео
+168=FeohMysticMuse=Магистр Магии Фео
+169=FeohStormScreamer=Повелитель Бури Фео
+170=FeohSoulhound=Инквизитор Фео
+171=IssHierophant=Iss Hierophant
+172=IssSwordMuse=Виртуоз Иса
+173=IssSpectralDancer=Призрачный Танцор Иса
+174=IssDominator=Деспот Иса
+175=IssDoomcryer=Глас Судьбы Иса
+176=WynnArcanaLord=Чернокнижник Веньо
+177=WynnElementalMaster=Мастер Стихий Веньо
+178=WynnSpectralMaster=Владыка Теней Веньо
+179=AeoreCardinal=Кардинал Альгиза
+180=AeoreEvasSaint=Жрец Евы Альгиза
+181=AeoreShillienSaint=Жрец Шилен Альгиза
