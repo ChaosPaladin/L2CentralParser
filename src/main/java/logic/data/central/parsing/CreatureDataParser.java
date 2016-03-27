@@ -3,10 +3,9 @@ package logic.data.central.parsing;
 import com.google.common.base.CharMatcher;
 import com.google.common.collect.ImmutableMap;
 import logic.data.AbstractDataParser;
-import logic.data.AbstractDataResult;
 import logic.data.central.CentralInfo;
-import logic.lineage.holder.LootHolder;
 import logic.lineage.model.Loot;
+import logic.lineage.model.Npc;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,7 +14,6 @@ import org.jsoup.select.Elements;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,11 +25,13 @@ public class CreatureDataParser extends AbstractDataParser<String> {
     private CentralInfo.DataType type;
     private HashMap<String, String> creatureData = new HashMap<>();
     private Loot[] fullLoot;
+    private Npc npc;
 
-    public CreatureDataParser(String data, CentralInfo.DataType type) {
+    public CreatureDataParser(String data, CentralInfo.DataType type, Npc npc) {
         super(data);
 
         this.type = type;
+        this.npc = npc;
     }
 
     @Override
@@ -41,13 +41,20 @@ public class CreatureDataParser extends AbstractDataParser<String> {
     }
 
     public void parseCreature(Document document) {
+        Element mainElement = document.getElementById("npc_brief_info_3");
+        if (mainElement == null) {
+            log.warn("Sadly, but l2central.info/wiki/ hasn't page with (id: " + npc.getId() + ", name: " + npc.getName() + ") npc");
+            return;
+        }
+
         // parse npc info
         parseCreatureData(document);
         parseCreatureLoot(document);
     }
 
     private void parseCreatureData(Document document) {
-        Elements elements = document.getElementById("npc_brief_info_3").select("tbody").select("td");
+        Element mainElement = document.getElementById("npc_brief_info_3");
+        Elements elements = mainElement.select("tbody").select("td");
         int x = 0;
         for (int i = 1; i < elements.size(); i += 2) {
             creatureData.put(creatureParams[x++], elements.get(i).text());
@@ -89,8 +96,6 @@ public class CreatureDataParser extends AbstractDataParser<String> {
                 fullLoot = ArrayUtils.addAll(fullLoot, loot);
             }
         }
-
-        log.info("Done");
     }
 
     private Loot[] parseCreatureLootTemplate(Elements tableElements, Loot.Type type) {
@@ -158,7 +163,7 @@ public class CreatureDataParser extends AbstractDataParser<String> {
 
             loot.type = type;
             fullLoot[x-1] = loot;
-            log.info("Item (" + loot.russianName + ": " + loot.itemId + ") " + (x) + " of " + (tableElements.size() - 1) + " parsed. Group: " + type.toString());
+            log.debug("Item (" + loot.russianName + ": " + loot.itemId + ") " + (x) + " of " + (tableElements.size() - 1) + " parsed. Group: " + type.toString());
         }
 
         return fullLoot;

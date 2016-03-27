@@ -3,8 +3,10 @@ package logic.lineage.holder;
 import logic.lineage.model.Npc;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -32,10 +34,21 @@ public class NpcHolder {
         Npc[] npcList = new Npc[ids.length];
         int i = 0;
         for (String data : ids) {
-            npcList[i] = npcStore.get(Integer.parseInt(data));
+            npcList[i++] = npcStore.get(Integer.parseInt(data));
         }
 
         return npcList;
+    }
+
+    public Npc[] getNpcList(int minId, int maxId) {
+        return npcStore.entrySet().stream().filter(entry -> entry.getKey() >= minId && entry.getKey() <= maxId).
+                map(Map.Entry::getValue).toArray(Npc[]::new);
+    }
+
+    public Npc[] getNpcList() {
+        Npc[] data = new Npc[npcStore.values().size()];
+        npcStore.values().toArray(data);
+        return data;
     }
 
     public Npc[] getNpcListByName(String[] names) {

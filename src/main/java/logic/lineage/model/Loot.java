@@ -16,6 +16,10 @@ public class Loot {
         }
     }
 
+    public float getAverageChance() {
+        return (minChance + maxChance) / 2;
+    }
+
     public Type type;
     public int itemId;
     public int min;
